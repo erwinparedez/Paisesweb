@@ -27,12 +27,13 @@ $(document).ready(function () {
                     tabla.append($("<tr></tr>").append($("<th></th>").text("Nombre")).append($("<td></td>").text(response.nombrePais)));
                     tabla.append($("<tr></tr>").append($("<th></th>").text("Extension")).append($("<td></td>").text(response.extensionPais)));
                     tabla.css("color", "white");
+                    tabla.css("font-size", "40px")
                     $("#resultado").append(tabla);
                 } else {
                     // Mostrar un formulario para agregar el país
                     var form = $("<form></form>").attr("id", "agregar-form");
-                    form.append($("<div></div>").addClass("form-group").append($("<label></label>").attr("for", "nombre").text("Nombre")).append($("<input></input>").attr("type", "text").addClass("form-control").attr("id", "nombre").attr("name", "nombre").attr("placeholder", "Ejemplo: Bolivia").attr("required", true).val(pais)));
-                    form.append($("<div></div>").addClass("form-group").append($("<label></label>").attr("for", "extension").text("Extension")).append($("<input></input>").attr("type", "text").addClass("form-control").attr("id", "extension").attr("name", "extension").attr("placeholder", "Ejemplo: 123456").attr("required", true)));
+                    form.append($("<div></div>").addClass("form-group").append($("<label></label>").attr("for", "nombre").text("Nombre")).append($("<input>").attr("type", "text").addClass("form-control").attr("id", "nombre").attr("name", "nombre").attr("placeholder", "Ejemplo: Bolivia").attr("required", true).val(pais)));
+                    form.append($("<div></div>").addClass("form-group").append($("<label></label>").attr("for", "extension").text("Extension")).append($("<input>").attr("type", "text").addClass("form-control").attr("id", "extension").attr("name", "extension").attr("placeholder", "Ejemplo: 123456").attr("required", true)));
                     form.append($("<button></button>").attr("type", "submit").addClass("btn btn-success").text("Agregar"));
                     form.css("color", "white");
                     $("#resultado").append(form);
