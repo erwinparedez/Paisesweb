@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar país</title>
+    <!-- Agregar los links a Bootstrap y jQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Buscar país</h1>
+    <form id="buscar-form">
+        <div class="form-group">
+            <label for="pais">Nombre del país:</label>
+            <input type="text" class="form-control" id="pais" name="pais" placeholder="Ejemplo: Bolivia" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+    <div id="resultado"></div>
+</div>
+<!-- Agregar el script propio -->
+<script src="buscar.js"></script>
+<script src="buscar.php"></script>
+</body>
+</html>
