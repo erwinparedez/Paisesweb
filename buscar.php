@@ -1,7 +1,7 @@
 <?php
 // Conectarse a la base de datos MariaDB
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=sisinfpaises;port=3306', 'sistemasinf', 'sistemasinf');
+    $pdo = new PDO('mysql:host=db4free.net;dbname=sisinfpaises;port=3306', 'sistemasinf', 'sistemasinf');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     // Si ocurre algún error, enviar un mensaje de error al cliente
