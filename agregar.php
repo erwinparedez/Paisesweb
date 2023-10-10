@@ -1,5 +1,5 @@
 <?php
-// Conectarse a la base de datos MariaDB
+// Conectarse a la base de datos Mysql
 try {
     $pdo = new PDO('mysql:host=db4free.net;dbname=sisinfpaises;port=3306', 'sistemasinf', 'sistemasinf');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
